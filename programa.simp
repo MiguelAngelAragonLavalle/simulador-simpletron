@@ -1,0 +1,47 @@
+; ============================================================================
+; demo.simp  -  Programa que carga el simulador mejorado al iniciar.
+;
+; Demuestra las mejoras 1 (carga desde archivo), 5 (nueva linea),
+; 6 (entrada de cadenas) y 7 (salida de cadenas).
+;
+; El saludo que aparece en pantalla NO lo imprime el simulador: esta guardado
+; dentro de la memoria de la Simpletron como codigos ASCII, a partir de la
+; direccion 005, y lo imprime la instruccion 14 WRITESTRING.
+;
+; Las lineas que empiezan con ; o # son comentarios.
+; Lo que se escribe despues del numero tambien se ignora.
+; ============================================================================
+
+; --- Programa ---
++13600   ; 000  READSTRING  600   Lee lo que escriba el usuario -> 600
++14005   ; 001  WRITESTRING 005   Imprime el saludo guardado abajo
++14600   ; 002  WRITESTRING 600   Imprime lo que escribio el usuario
++12000   ; 003  NEWLINE           Salto de linea
++43000   ; 004  HALT              Fin de la ejecucion
+
+; --- Datos: el saludo, guardado en formato de cadena ---
++00022   ; 005  longitud del saludo (22 caracteres)
++00083   ; 006  'S'
++00105   ; 007  'i'
++00109   ; 008  'm'
++00112   ; 009  'p'
++00108   ; 010  'l'
++00101   ; 011  'e'
++00116   ; 012  't'
++00114   ; 013  'r'
++00111   ; 014  'o'
++00110   ; 015  'n'
++00032   ; 016  (espacio)
++00116   ; 017  't'
++00101   ; 018  'e'
++00032   ; 019  (espacio)
++00115   ; 020  's'
++00097   ; 021  'a'
++00108   ; 022  'l'
++00117   ; 023  'u'
++00100   ; 024  'd'
++00097   ; 025  'a'
++00044   ; 026  ','
++00032   ; 027  (espacio)
+
+-99999   ; centinela de fin de carga (opcional)

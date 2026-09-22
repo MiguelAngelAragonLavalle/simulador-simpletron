@@ -1,0 +1,10 @@
+; ============================================================================
+; MEJORA 1 - Caso de archivo con una linea invalida.
+; La tercera linea con contenido no es un numero, asi que el simulador debe
+; informar el numero de linea exacto y detenerse.
+; ============================================================================
++10010   ; 000  READ 010
++11010   ; 001  WRITE 010
+esto no es un numero
++43000
+-99999
