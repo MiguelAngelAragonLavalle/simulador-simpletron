@@ -1,0 +1,35 @@
+*** Bienvenido a Simpletron! ***
+*** Por favor escriba su programa una instrucción ***
+*** (o palabra de datos) a la vez. Yo mostraré    ***
+*** el número de posición y un signo de           ***
+*** interrogación (?). Después usted escribe la   ***
+*** palabra para esa posición. Escriba el         ***
+*** centinela 9999 para terminar de introducir    ***
+*** su programa. ***
+
+00 ? 01 ? 02 ? 03 ? 04 ? 05 ? 06 ? 07 ? 08 ? 09 ? 10 ? 11 ? 12 ? 13 ? 14 ? 15 ? 16 ? 17 ? 18 ? 19 ? 20 ? *** Se terminó de cargar el programa ***
+*** Comienza la ejecución del programa ***
+
+? ? ? ? ? ? ? +0007
+*** Terminó la ejecución de Simpletron ***
+
+REGISTROS:
+accumulator           +0007
+instructionCounter    13
+instructionRegister   +4300
+operationCode         43
+operand               00
+
+MEMORIA:
+        0     1     2     3     4     5     6     7     8     9
+  0 +1015 +2014 +3015 +2114 +2016 +3117 +2116 +4209 +4000 +2014
+ 10 +3218 +2119 +1119 +4300 +0055 +0040 +0000 +0001 +0007 +0007
+ 20 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+ 30 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+ 40 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+ 50 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+ 60 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+ 70 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+ 80 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+ 90 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+

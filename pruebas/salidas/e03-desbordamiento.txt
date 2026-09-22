@@ -1,0 +1,36 @@
+*** Bienvenido a Simpletron! ***
+*** Por favor escriba su programa una instrucción ***
+*** (o palabra de datos) a la vez. Yo mostraré    ***
+*** el número de posición y un signo de           ***
+*** interrogación (?). Después usted escribe la   ***
+*** palabra para esa posición. Escriba el         ***
+*** centinela 9999 para terminar de introducir    ***
+*** su programa. ***
+
+00 ? 01 ? 02 ? 03 ? 04 ? 05 ? 06 ? 07 ? *** Se terminó de cargar el programa ***
+*** Comienza la ejecución del programa ***
+
+? ? 
+*** ERROR FATAL: Desbordamiento del acumulador en una suma ***
+*** La ejecución de Simpletron termina de forma anormal ***
+
+REGISTROS:
+accumulator           +18000
+instructionCounter    03
+instructionRegister   +3006
+operationCode         30
+operand               06
+
+MEMORIA:
+        0     1     2     3     4     5     6     7     8     9
+  0 +1005 +1006 +2005 +3006 +4300 +9000 +9000 +0000 +0000 +0000
+ 10 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+ 20 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+ 30 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+ 40 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+ 50 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+ 60 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+ 70 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+ 80 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+ 90 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+

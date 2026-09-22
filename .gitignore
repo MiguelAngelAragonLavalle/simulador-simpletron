@@ -1,0 +1,8 @@
+# Ejecutables y objetos: se generan al compilar, no se versionan
+*.exe
+*.o
+*.obj
+
+# Archivos temporales
+*.tmp
+salida.txt
