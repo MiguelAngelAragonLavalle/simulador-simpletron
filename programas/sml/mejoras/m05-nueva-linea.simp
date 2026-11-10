@@ -1,0 +1,13 @@
+; ============================================================================
+; MEJORA 5 - Instruccion 12 NEWLINE (salto de linea).
+; WRITESTRING no agrega salto de linea por si sola. Sin NEWLINE las dos
+; impresiones saldrian pegadas en el mismo renglon; con NEWLINE quedan en
+; renglones separados.
+; ============================================================================
++13100   ; 000  READSTRING 100   Lee una cadena
++14100   ; 001  WRITESTRING 100  La imprime
++12000   ; 002  NEWLINE          Salto de linea
++14100   ; 003  WRITESTRING 100  La imprime otra vez
++12000   ; 004  NEWLINE          Salto de linea
++43000   ; 005  HALT
+-99999

@@ -1,0 +1,16 @@
+; ============================================================================
+; MEJORAS 6 y 7 - Instrucciones 13 READSTRING y 14 WRITESTRING.
+;
+; Formato de almacenamiento elegido, a partir de la direccion base 200:
+;     memoria[200] = longitud de la cadena
+;     memoria[201] = codigo ASCII del primer caracter
+;     memoria[202] = codigo ASCII del segundo caracter, y asi sucesivamente
+; ============================================================================
++13200   ; 000  READSTRING 200   Lee la cadena y la guarda desde la 200
++14200   ; 001  WRITESTRING 200  La imprime traduciendo ASCII -> caracter
++12000   ; 002  NEWLINE
++11200   ; 003  WRITE 200        Imprime la LONGITUD guardada
++11201   ; 004  WRITE 201        Imprime el ASCII del primer caracter
++11202   ; 005  WRITE 202        Imprime el ASCII del segundo caracter
++43000   ; 006  HALT
+-99999

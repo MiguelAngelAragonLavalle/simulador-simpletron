@@ -1,0 +1,12 @@
+; ============================================================================
+; MEJORA 4 - Instruccion 35 EXPONENTIATION (potencia).
+; Lee una base y un exponente, calcula base^exponente y lo imprime.
+; ============================================================================
++10010   ; 000  READ  010     Lee la base
++10011   ; 001  READ  011     Lee el exponente
++20010   ; 002  LOAD  010
++35011   ; 003  EXPONENT 011  acumulador <- base ^ exponente
++21012   ; 004  STORE 012
++11012   ; 005  WRITE 012
++43000   ; 006  HALT
+-99999

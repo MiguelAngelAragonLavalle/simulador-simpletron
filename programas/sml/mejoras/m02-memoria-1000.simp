@@ -1,0 +1,12 @@
+; ============================================================================
+; MEJORA 2 - Memoria de 1000 posiciones.
+; Usa las direcciones 120, 500 y 999, imposibles en la version basica.
+; ============================================================================
++10120   ; 000  READ  120     Lee A en la direccion 120
++10500   ; 001  READ  500     Lee B en la direccion 500
++20120   ; 002  LOAD  120
++30500   ; 003  ADD   500     acumulador <- A + B
++21999   ; 004  STORE 999     guarda el resultado en la ultima posicion
++11999   ; 005  WRITE 999     lo imprime
++43000   ; 006  HALT
+-99999
