@@ -1,0 +1,11 @@
+﻿*** Evaluacion de expresiones con pilas ***
+*** Operadores: + - * / ^   y agrupadores ( ) [ ] { } ***
+*** Los operandos pueden tener varios digitos ***
+
+Expresion: 2 3
+
+--- 1. Validacion de agrupadores ---
+Agrupadores correctamente anidados.
+Profundidad maxima de anidamiento: 0
+
+*** ERROR: Faltan operadores: hay dos operandos seguidos ***

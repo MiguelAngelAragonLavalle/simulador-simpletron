@@ -1,0 +1,27 @@
+﻿*** Evaluacion de expresiones con pilas ***
+*** Operadores: + - * / ^   y agrupadores ( ) [ ] { } ***
+*** Los operandos pueden tener varios digitos ***
+
+Expresion: 7 + 3 * 20 - 100 / 5
+
+--- 1. Validacion de agrupadores ---
+Agrupadores correctamente anidados.
+Profundidad maxima de anidamiento: 0
+
+--- 2. Conversion a postfija ---
+Infija   : 7 + 3 * 20 - 100 / 5 
+Postfija : 7 3 20 * + 100 5 / - 
+
+--- 3. Evaluacion ---
+symb     opnd1      opnd2      value      pila
+7                                         7
+3                                         7,3
+20                                        7,3,20
+*        3          20         60         7,60
++        7          60         67         67
+100                                       67,100
+5                                         67,100,5
+/        100        5          20         67,20
+-        67         20         47         47
+
+Resultado: 47

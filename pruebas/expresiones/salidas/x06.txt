@@ -1,0 +1,25 @@
+﻿*** Evaluacion de expresiones con pilas ***
+*** Operadores: + - * / ^   y agrupadores ( ) [ ] { } ***
+*** Los operandos pueden tener varios digitos ***
+
+Expresion: { [ 15 - 5 ] * 12 } + 480
+
+--- 1. Validacion de agrupadores ---
+Agrupadores correctamente anidados.
+Profundidad maxima de anidamiento: 2
+
+--- 2. Conversion a postfija ---
+Infija   : { [ 15 - 5 ] * 12 } + 480 
+Postfija : 15 5 - 12 * 480 + 
+
+--- 3. Evaluacion ---
+symb     opnd1      opnd2      value      pila
+15                                        15
+5                                         15,5
+-        15         5          10         10
+12                                        10,12
+*        10         12         120        120
+480                                       120,480
++        120        480        600        600
+
+Resultado: 600
