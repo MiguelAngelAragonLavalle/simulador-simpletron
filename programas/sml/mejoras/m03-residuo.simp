@@ -1,0 +1,12 @@
+; ============================================================================
+; MEJORA 3 - Instruccion 34 REMAINDER (residuo / modulo).
+; Lee A y B, calcula A mod B y lo imprime.
+; ============================================================================
++10010   ; 000  READ  010     Lee A
++10011   ; 001  READ  011     Lee B
++20010   ; 002  LOAD  010
++34011   ; 003  REMAINDER 011 acumulador <- A mod B
++21012   ; 004  STORE 012
++11012   ; 005  WRITE 012
++43000   ; 006  HALT
+-99999

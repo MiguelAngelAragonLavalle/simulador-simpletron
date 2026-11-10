@@ -1,0 +1,9 @@
+; ============================================================================
+; MEJORA 5 - Caso de contraste: el MISMO programa sin la instruccion NEWLINE.
+; Sirve para comprobar que la diferencia la hace realmente la instruccion 12.
+; ============================================================================
++13100   ; 000  READSTRING 100
++14100   ; 001  WRITESTRING 100
++14100   ; 002  WRITESTRING 100
++43000   ; 003  HALT
+-99999

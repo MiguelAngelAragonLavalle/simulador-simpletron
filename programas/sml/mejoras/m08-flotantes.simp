@@ -1,0 +1,14 @@
+; ============================================================================
+; MEJORA 8 - Punto flotante: 15 READFLOAT, 16 WRITEFLOAT, 36 DIVIDEFLOAT.
+;
+; Compara con la version basica: alli 55 / 7 daba 7 (division entera).
+; Con DIVIDEFLOAT da 7.8571.
+; ============================================================================
++15010   ; 000  READFLOAT 010    Lee A (acepta decimales)
++15011   ; 001  READFLOAT 011    Lee B
++20010   ; 002  LOAD  010
++36011   ; 003  DIVIDEFLOAT 011  acumulador <- A / B  (division real)
++21012   ; 004  STORE 012
++16012   ; 005  WRITEFLOAT 012   Lo imprime con decimales
++43000   ; 006  HALT
+-99999
