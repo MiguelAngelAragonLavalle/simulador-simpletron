@@ -1,0 +1,3 @@
+10 rem error: las variables deben ser minusculas
+20 input X
+30 end

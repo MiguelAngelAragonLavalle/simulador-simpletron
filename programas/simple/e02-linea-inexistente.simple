@@ -1,0 +1,4 @@
+10 rem error: la linea 500 no existe
+20 input a
+30 goto 500
+40 end
