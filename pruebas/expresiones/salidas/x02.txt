@@ -1,0 +1,23 @@
+﻿*** Evaluacion de expresiones con pilas ***
+*** Operadores: + - * / ^   y agrupadores ( ) [ ] { } ***
+*** Los operandos pueden tener varios digitos ***
+
+Expresion: 100 / 4 + 25
+
+--- 1. Validacion de agrupadores ---
+Agrupadores correctamente anidados.
+Profundidad maxima de anidamiento: 0
+
+--- 2. Conversion a postfija ---
+Infija   : 100 / 4 + 25 
+Postfija : 100 4 / 25 + 
+
+--- 3. Evaluacion ---
+symb     opnd1      opnd2      value      pila
+100                                       100
+4                                         100,4
+/        100        4          25         25
+25                                        25,25
++        25         25         50         50
+
+Resultado: 50

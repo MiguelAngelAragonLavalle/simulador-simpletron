@@ -1,0 +1,10 @@
+﻿*** Evaluacion de expresiones con pilas ***
+*** Operadores: + - * / ^   y agrupadores ( ) [ ] { } ***
+*** Los operandos pueden tener varios digitos ***
+
+Expresion: [ 3 + 4 )
+
+--- 1. Validacion de agrupadores ---
+Se abrio '[' y se cerro con ')' en la posicion 9.
+
+*** ERROR: Los agrupadores no estan bien anidados ***
