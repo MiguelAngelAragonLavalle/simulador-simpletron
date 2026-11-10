@@ -1,0 +1,8 @@
+10 rem promedio de tres numeros
+20 input a
+30 input b
+40 input c
+50 let s = a + b + c
+60 let p = s / 3
+70 print p
+80 end

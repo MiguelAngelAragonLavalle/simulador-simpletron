@@ -1,0 +1,9 @@
+10 rem tabla de multiplicar del 1 al 10
+20 input n
+30 let i = 1
+40 if i > 10 goto 90
+50 let r = n * i
+60 print r
+70 let i = i + 1
+80 goto 40
+90 end
