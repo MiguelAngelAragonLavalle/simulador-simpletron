@@ -8,7 +8,10 @@ con ramas.
 | Archivo | Contenido |
 |---|---|
 | `bitacora-git.md` | Las actividades del laboratorio de ramas, explicadas con los comandos y sus salidas |
-| `comandos-git.txt` | Transcripción literal de la sesión de Git: los comandos y sus salidas |
+| `captura-1-ramas.png` | Captura de `git status`, `git branch -v` y `git branch -r` |
+| `captura-2-cambio-de-rama.png` | Captura del cambio entre ramas con `git checkout` y el commit de cada una |
+| `captura-3-historial.png` | Captura de `git log --graph --oneline --all --decorate` |
+| `comandos-git.txt` | Transcripción de la sesión de Git: los comandos y sus salidas |
 | `historial-ramas.txt` | Grafo del historial (`git log --graph`) y lista de ramas (`git branch -v`) |
 
 ## `ejecuciones/`

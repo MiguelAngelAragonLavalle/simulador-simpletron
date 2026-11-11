@@ -6,6 +6,24 @@ propia rama y después se unió a `main`.
 La transcripción de los comandos y sus salidas está en [`comandos-git.txt`](comandos-git.txt)
 y el grafo de las ramas en [`historial-ramas.txt`](historial-ramas.txt).
 
+## Capturas de la práctica
+
+**Ramas locales y remotas.** `git status` muestra que `main` está al día con GitHub,
+`git branch -v` lista las cuatro ramas locales con su último commit y `git branch -r` las
+cuatro ramas del repositorio remoto.
+
+![Ramas locales y remotas](captura-1-ramas.png)
+
+**Cambio entre ramas.** Con `git checkout` se pasa de una rama a otra, y `git log` muestra el
+commit que tiene cada rama.
+
+![Cambio entre ramas](captura-2-cambio-de-rama.png)
+
+**Historial.** El grafo completo: cada rama sale de `main`, tiene su commit y se une de nuevo
+con un merge.
+
+![Historial con las ramas](captura-3-historial.png)
+
 ## Ramas
 
 | Rama | Contenido |

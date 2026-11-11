@@ -323,7 +323,7 @@ con el de la figura 6.2 del libro y la tabla de símbolos con la de la figura 6.
 │   ├── entradas/                   guiones de entrada
 │   └── salidas/                    salidas reales capturadas
 └── evidencias/
-    ├── git-branch/                 bitácora de ramas y grafo del historial
+    ├── git-branch/                 bitácora de ramas, capturas y grafo del historial
     └── ejecuciones/                salidas completas de cada herramienta
 ```
 
@@ -430,7 +430,7 @@ Cada componente se desarrolló en su propia rama y se integró a `main`:
 | `evaluacion-expresiones` | Validación, conversión y evaluación con pilas |
 | `compilador-simple` | Compilador de Simple a SML |
 
-Bitácora de comandos y grafo del historial en
+Bitácora de comandos, capturas de la práctica y grafo del historial en
 [`evidencias/git-branch/`](evidencias/git-branch/).
 
 ---
