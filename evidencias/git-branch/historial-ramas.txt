@@ -1,0 +1,19 @@
+*   1fd9e47 (HEAD -> main) Merge branch 'compilador-simple'
+|\  
+| * 5cd1193 (compilador-simple) compilador de simple a sml
+|/  
+*   85b5f2d Merge branch 'evaluacion-expresiones'
+|\  
+| * 0e0077c (evaluacion-expresiones) evaluacion de expresiones con pilas
+|/  
+*   f9e26b1 Merge branch 'mejoras-simpletron'
+|\  
+| * 262e0c1 (mejoras-simpletron) mejoras al simulador
+|/  
+* 6ecb5f9 programas sml y pruebas del simulador
+* efdf804 simulador simpletron
+
+  compilador-simple      5cd1193 compilador de simple a sml
+  evaluacion-expresiones 0e0077c evaluacion de expresiones con pilas
+* main                   1fd9e47 Merge branch 'compilador-simple'
+  mejoras-simpletron     262e0c1 mejoras al simulador

@@ -1,0 +1,45 @@
+﻿*** Compilador de Simple a SML ***
+Fuente : programas\simple\05-expresion.simple
+Salida : programas\sml\compilados\05-expresion.sml
+
+--- Primera pasada ---
+Se generaron 18 instrucciones SML.
+Los datos ocupan de la posicion 92 a la 99.
+
+--- Tabla de simbolos ---
+Simbolo    Tipo   Ubicacion
+10         L      00
+20         L      00
+a          V      99
+30         L      01
+b          V      98
+40         L      02
+r          V      97
+2          C      95
+50         L      16
+60         L      17
+
+--- Segunda pasada: referencias hacia adelante ---
+  (no habia referencias pendientes)
+
+--- Codigo SML generado ---
+00  +1099   input a
+01  +1098   input b
+02  +2099   cargar a
+03  +3098   sumar b
+04  +2196   guardar en temporal 96
+05  +2096   cargar temporal 96
+06  +3395   multiplicar por 2
+07  +2194   guardar en temporal 94
+08  +2099   cargar a
+09  +3295   dividir entre 2
+10  +2193   guardar en temporal 93
+11  +2094   cargar temporal 94
+12  +3193   restar temporal 93
+13  +2192   guardar en temporal 92
+14  +2092   cargar temporal 92
+15  +2197   asignar a r
+16  +1197   print r
+17  +4300   end
+
+*** Compilacion terminada. Ejecute: simpletron.exe programas\sml\compilados\05-expresion.sml ***

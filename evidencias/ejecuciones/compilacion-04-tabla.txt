@@ -1,0 +1,51 @@
+﻿*** Compilador de Simple a SML ***
+Fuente : programas\simple\04-tabla.simple
+Salida : programas\sml\compilados\04-tabla.sml
+
+--- Primera pasada ---
+Se generaron 19 instrucciones SML.
+Los datos ocupan de la posicion 93 a la 99.
+
+--- Tabla de simbolos ---
+Simbolo    Tipo   Ubicacion
+10         L      00
+20         L      00
+n          V      99
+30         L      01
+i          V      98
+1          C      97
+40         L      03
+10         C      96
+50         L      06
+r          V      95
+60         L      11
+70         L      12
+80         L      17
+90         L      18
+
+--- Segunda pasada: referencias hacia adelante ---
+  posicion 05  ->  linea 90 esta en 18  ->  +4118
+Se resolvieron 1 referencias.
+
+--- Codigo SML generado ---
+00  +1099   input n
+01  +2097   cargar 1
+02  +2198   asignar a i
+03  +2096   condicion i > 10
+04  +3198   restar al reves
+05  +4118   saltar si mayor
+06  +2099   cargar n
+07  +3398   multiplicar por i
+08  +2194   guardar en temporal 94
+09  +2094   cargar temporal 94
+10  +2195   asignar a r
+11  +1195   print r
+12  +2098   cargar i
+13  +3097   sumar 1
+14  +2193   guardar en temporal 93
+15  +2093   cargar temporal 93
+16  +2198   asignar a i
+17  +4003   goto 40
+18  +4300   end
+
+*** Compilacion terminada. Ejecute: simpletron.exe programas\sml\compilados\04-tabla.sml ***

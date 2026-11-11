@@ -1,0 +1,7 @@
+*** Compilador de Simple a SML ***
+Fuente : programas/simple/e01-mayuscula.simple
+Salida : salida.sml
+
+--- Primera pasada ---
+
+*** ERROR en la linea 2 del fuente: Las variables deben ser una sola letra minuscula ***

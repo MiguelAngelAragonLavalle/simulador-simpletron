@@ -1,0 +1,40 @@
+﻿*** Compilador de Simple a SML ***
+Fuente : programas\simple\02-mayor-de-dos.simple
+Salida : programas\sml\compilados\02-mayor-de-dos.sml
+
+--- Primera pasada ---
+Se generaron 10 instrucciones SML.
+Los datos ocupan de la posicion 98 a la 99.
+
+--- Tabla de simbolos ---
+Simbolo    Tipo   Ubicacion
+10         L      00
+20         L      00
+a          V      99
+30         L      01
+b          V      98
+40         L      02
+50         L      06
+60         L      07
+70         L      08
+80         L      09
+
+--- Segunda pasada: referencias hacia adelante ---
+  posicion 04  ->  linea 70 esta en 08  ->  +4108
+  posicion 05  ->  linea 70 esta en 08  ->  +4208
+  posicion 07  ->  linea 80 esta en 09  ->  +4009
+Se resolvieron 3 referencias.
+
+--- Codigo SML generado ---
+00  +1099   input a
+01  +1098   input b
+02  +2098   condicion a >= b
+03  +3199   restar al reves
+04  +4108   saltar si mayor
+05  +4208   o si igual
+06  +1198   print b
+07  +4009   goto 80
+08  +1199   print a
+09  +4300   end
+
+*** Compilacion terminada. Ejecute: simpletron.exe programas\sml\compilados\02-mayor-de-dos.sml ***

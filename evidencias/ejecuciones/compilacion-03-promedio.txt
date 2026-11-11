@@ -1,0 +1,49 @@
+﻿*** Compilador de Simple a SML ***
+Fuente : programas\simple\03-promedio.simple
+Salida : programas\sml\compilados\03-promedio.sml
+
+--- Primera pasada ---
+Se generaron 18 instrucciones SML.
+Los datos ocupan de la posicion 91 a la 99.
+
+--- Tabla de simbolos ---
+Simbolo    Tipo   Ubicacion
+10         L      00
+20         L      00
+a          V      99
+30         L      01
+b          V      98
+40         L      02
+c          V      97
+50         L      03
+s          V      96
+60         L      11
+p          V      93
+3          C      92
+70         L      16
+80         L      17
+
+--- Segunda pasada: referencias hacia adelante ---
+  (no habia referencias pendientes)
+
+--- Codigo SML generado ---
+00  +1099   input a
+01  +1098   input b
+02  +1097   input c
+03  +2099   cargar a
+04  +3098   sumar b
+05  +2195   guardar en temporal 95
+06  +2095   cargar temporal 95
+07  +3097   sumar c
+08  +2194   guardar en temporal 94
+09  +2094   cargar temporal 94
+10  +2196   asignar a s
+11  +2096   cargar s
+12  +3292   dividir entre 3
+13  +2191   guardar en temporal 91
+14  +2091   cargar temporal 91
+15  +2193   asignar a p
+16  +1193   print p
+17  +4300   end
+
+*** Compilacion terminada. Ejecute: simpletron.exe programas\sml\compilados\03-promedio.sml ***

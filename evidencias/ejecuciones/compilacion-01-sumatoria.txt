@@ -1,0 +1,52 @@
+﻿*** Compilador de Simple a SML ***
+Fuente : programas\simple\01-sumatoria.simple
+Salida : programas\sml\compilados\01-sumatoria.sml
+
+--- Primera pasada ---
+Se generaron 17 instrucciones SML.
+Los datos ocupan de la posicion 94 a la 99.
+
+--- Tabla de simbolos ---
+Simbolo    Tipo   Ubicacion
+5          L      00
+10         L      00
+x          V      99
+15         L      01
+20         L      01
+y          V      98
+25         L      04
+30         L      04
+1          C      97
+35         L      09
+40         L      09
+t          V      95
+45         L      14
+50         L      14
+55         L      15
+60         L      15
+99         L      16
+
+--- Segunda pasada: referencias hacia adelante ---
+  posicion 03  ->  linea 60 esta en 15  ->  +4215
+Se resolvieron 1 referencias.
+
+--- Codigo SML generado ---
+00  +1099   input x
+01  +2098   condicion y == x
+02  +3199   restar
+03  +4215   saltar si igual
+04  +2098   cargar y
+05  +3097   sumar 1
+06  +2196   guardar en temporal 96
+07  +2096   cargar temporal 96
+08  +2198   asignar a y
+09  +2095   cargar t
+10  +3098   sumar y
+11  +2194   guardar en temporal 94
+12  +2094   cargar temporal 94
+13  +2195   asignar a t
+14  +4001   goto 20
+15  +1195   print t
+16  +4300   end
+
+*** Compilacion terminada. Ejecute: simpletron.exe programas\sml\compilados\01-sumatoria.sml ***

@@ -1,0 +1,19 @@
+*** Compilador de Simple a SML ***
+Fuente : programas/simple/e02-linea-inexistente.simple
+Salida : salida.sml
+
+--- Primera pasada ---
+Se generaron 3 instrucciones SML.
+Los datos ocupan de la posicion 99 a la 99.
+
+--- Tabla de simbolos ---
+Simbolo    Tipo   Ubicacion
+10         L      00
+20         L      00
+a          V      99
+30         L      01
+40         L      02
+
+--- Segunda pasada: referencias hacia adelante ---
+
+*** ERROR: la linea 500 no existe en el programa ***

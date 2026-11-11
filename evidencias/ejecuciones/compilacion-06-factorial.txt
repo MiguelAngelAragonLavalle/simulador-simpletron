@@ -1,0 +1,53 @@
+﻿*** Compilador de Simple a SML ***
+Fuente : programas\simple\06-factorial.simple
+Salida : programas\sml\compilados\06-factorial.sml
+
+--- Primera pasada ---
+Se generaron 21 instrucciones SML.
+Los datos ocupan de la posicion 94 a la 99.
+
+--- Tabla de simbolos ---
+Simbolo    Tipo   Ubicacion
+10         L      00
+20         L      00
+n          V      99
+30         L      01
+f          V      98
+1          C      97
+40         L      03
+i          V      96
+50         L      05
+60         L      08
+70         L      13
+80         L      18
+90         L      19
+95         L      20
+
+--- Segunda pasada: referencias hacia adelante ---
+  posicion 07  ->  linea 90 esta en 19  ->  +4119
+Se resolvieron 1 referencias.
+
+--- Codigo SML generado ---
+00  +1099   input n
+01  +2097   cargar 1
+02  +2198   asignar a f
+03  +2097   cargar 1
+04  +2196   asignar a i
+05  +2099   condicion i > n
+06  +3196   restar al reves
+07  +4119   saltar si mayor
+08  +2098   cargar f
+09  +3396   multiplicar por i
+10  +2195   guardar en temporal 95
+11  +2095   cargar temporal 95
+12  +2198   asignar a f
+13  +2096   cargar i
+14  +3097   sumar 1
+15  +2194   guardar en temporal 94
+16  +2094   cargar temporal 94
+17  +2196   asignar a i
+18  +4005   goto 50
+19  +1198   print f
+20  +4300   end
+
+*** Compilacion terminada. Ejecute: simpletron.exe programas\sml\compilados\06-factorial.sml ***

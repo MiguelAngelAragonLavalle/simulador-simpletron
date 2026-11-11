@@ -1,0 +1,491 @@
+$ git init -b main
+Initialized empty Git repository in C:/Users/MAAL1/Downloads/simulador simpletron/.git/
+
+$ git add .gitignore src/simpletron/simpletron.c
+
+$ git commit -m "simulador simpletron"
+[main (root-commit) efdf804] simulador simpletron
+ 2 files changed, 623 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 src/simpletron/simpletron.c
+
+$ git add programas/sml/*.sml pruebas/entradas pruebas/datos pruebas/salidas pruebas/salidas-archivo pruebas/CASOS-DE-PRUEBA.md docs/referencia-sml.md
+
+$ git commit -m "programas sml y pruebas del simulador"
+[main 6ecb5f9] programas sml y pruebas del simulador
+ 62 files changed, 1858 insertions(+)
+ create mode 100644 docs/referencia-sml.md
+ create mode 100644 programas/sml/01-suma.sml
+ create mode 100644 programas/sml/02-mayor-de-dos.sml
+ create mode 100644 programas/sml/03-producto.sml
+ create mode 100644 programas/sml/04-suma-de-10.sml
+ create mode 100644 programas/sml/05-promedio-de-7.sml
+ create mode 100644 programas/sml/06-mayor-de-serie.sml
+ create mode 100644 programas/sml/e01-division-entre-cero.sml
+ create mode 100644 programas/sml/e02-operacion-invalida.sml
+ create mode 100644 programas/sml/e03-desbordamiento.sml
+ create mode 100644 programas/sml/e04-carga-fuera-de-rango.sml
+ create mode 100644 programas/sml/e05-direccion-invalida.sml
+ create mode 100644 pruebas/CASOS-DE-PRUEBA.md
+ create mode 100644 pruebas/datos/01-suma.txt
+ create mode 100644 pruebas/datos/02-mayor-de-dos-iguales.txt
+ create mode 100644 pruebas/datos/02-mayor-de-dos-rama-a.txt
+ create mode 100644 pruebas/datos/02-mayor-de-dos.txt
+ create mode 100644 pruebas/datos/03-producto.txt
+ create mode 100644 pruebas/datos/04-suma-de-10.txt
+ create mode 100644 pruebas/datos/05-promedio-de-7.txt
+ create mode 100644 pruebas/datos/06-mayor-de-serie.txt
+ create mode 100644 pruebas/datos/e01-division-entre-cero.txt
+ create mode 100644 pruebas/datos/e02-operacion-invalida.txt
+ create mode 100644 pruebas/datos/e03-desbordamiento.txt
+ create mode 100644 pruebas/datos/e04-carga-fuera-de-rango.txt
+ create mode 100644 pruebas/datos/e05-direccion-invalida.txt
+ create mode 100644 pruebas/entradas/01-suma.txt
+ create mode 100644 pruebas/entradas/02-mayor-de-dos-iguales.txt
+ create mode 100644 pruebas/entradas/02-mayor-de-dos-rama-a.txt
+ create mode 100644 pruebas/entradas/02-mayor-de-dos.txt
+ create mode 100644 pruebas/entradas/03-producto.txt
+ create mode 100644 pruebas/entradas/04-suma-de-10.txt
+ create mode 100644 pruebas/entradas/05-promedio-de-7.txt
+ create mode 100644 pruebas/entradas/06-mayor-de-serie.txt
+ create mode 100644 pruebas/entradas/e01-division-entre-cero.txt
+ create mode 100644 pruebas/entradas/e02-operacion-invalida.txt
+ create mode 100644 pruebas/entradas/e03-desbordamiento.txt
+ create mode 100644 pruebas/entradas/e04-carga-fuera-de-rango.txt
+ create mode 100644 pruebas/salidas-archivo/01-suma.txt
+ create mode 100644 pruebas/salidas-archivo/02-mayor-de-dos-iguales.txt
+ create mode 100644 pruebas/salidas-archivo/02-mayor-de-dos-rama-a.txt
+ create mode 100644 pruebas/salidas-archivo/02-mayor-de-dos.txt
+ create mode 100644 pruebas/salidas-archivo/03-producto.txt
+ create mode 100644 pruebas/salidas-archivo/04-suma-de-10.txt
+ create mode 100644 pruebas/salidas-archivo/05-promedio-de-7.txt
+ create mode 100644 pruebas/salidas-archivo/06-mayor-de-serie.txt
+ create mode 100644 pruebas/salidas-archivo/e01-division-entre-cero.txt
+ create mode 100644 pruebas/salidas-archivo/e02-operacion-invalida.txt
+ create mode 100644 pruebas/salidas-archivo/e03-desbordamiento.txt
+ create mode 100644 pruebas/salidas-archivo/e05-direccion-invalida.txt
+ create mode 100644 pruebas/salidas/01-suma.txt
+ create mode 100644 pruebas/salidas/02-mayor-de-dos-iguales.txt
+ create mode 100644 pruebas/salidas/02-mayor-de-dos-rama-a.txt
+ create mode 100644 pruebas/salidas/02-mayor-de-dos.txt
+ create mode 100644 pruebas/salidas/03-producto.txt
+ create mode 100644 pruebas/salidas/04-suma-de-10.txt
+ create mode 100644 pruebas/salidas/05-promedio-de-7.txt
+ create mode 100644 pruebas/salidas/06-mayor-de-serie.txt
+ create mode 100644 pruebas/salidas/e01-division-entre-cero.txt
+ create mode 100644 pruebas/salidas/e02-operacion-invalida.txt
+ create mode 100644 pruebas/salidas/e03-desbordamiento.txt
+ create mode 100644 pruebas/salidas/e04-carga-fuera-de-rango.txt
+
+$ git checkout -b mejoras-simpletron
+Switched to a new branch 'mejoras-simpletron'
+
+$ git add src/simpletron/simpletron_mejorado.c programa.simp programas/sml/mejoras pruebas/mejoras
+
+$ git commit -m "mejoras al simulador"
+[mejoras-simpletron 262e0c1] mejoras al simulador
+ 68 files changed, 4738 insertions(+)
+ create mode 100644 programa.simp
+ create mode 100644 programas/sml/mejoras/demo.simp
+ create mode 100644 programas/sml/mejoras/m01-archivo-invalido.simp
+ create mode 100644 programas/sml/mejoras/m02-memoria-1000.simp
+ create mode 100644 programas/sml/mejoras/m03-residuo.simp
+ create mode 100644 programas/sml/mejoras/m04-potencia.simp
+ create mode 100644 programas/sml/mejoras/m05-nueva-linea.simp
+ create mode 100644 programas/sml/mejoras/m05-sin-nueva-linea.simp
+ create mode 100644 programas/sml/mejoras/m06-m07-cadenas.simp
+ create mode 100644 programas/sml/mejoras/m08-flotantes.simp
+ create mode 100644 pruebas/mejoras/CASOS-DE-PRUEBA-MEJORAS.md
+ create mode 100644 pruebas/mejoras/entradas/_interactivo.txt
+ create mode 100644 pruebas/mejoras/entradas/demo.txt
+ create mode 100644 pruebas/mejoras/entradas/m01-archivo-invalido.txt
+ create mode 100644 pruebas/mejoras/entradas/m02-memoria-1000.txt
+ create mode 100644 pruebas/mejoras/entradas/m03-residuo-1.txt
+ create mode 100644 pruebas/mejoras/entradas/m03-residuo-2.txt
+ create mode 100644 pruebas/mejoras/entradas/m03-residuo-3.txt
+ create mode 100644 pruebas/mejoras/entradas/m03-residuo-4.txt
+ create mode 100644 pruebas/mejoras/entradas/m03-residuo-5-error.txt
+ create mode 100644 pruebas/mejoras/entradas/m04-potencia-1.txt
+ create mode 100644 pruebas/mejoras/entradas/m04-potencia-2.txt
+ create mode 100644 pruebas/mejoras/entradas/m04-potencia-3.txt
+ create mode 100644 pruebas/mejoras/entradas/m04-potencia-4.txt
+ create mode 100644 pruebas/mejoras/entradas/m04-potencia-5.txt
+ create mode 100644 pruebas/mejoras/entradas/m04-potencia-6-error.txt
+ create mode 100644 pruebas/mejoras/entradas/m05-con-newline.txt
+ create mode 100644 pruebas/mejoras/entradas/m05-sin-newline.txt
+ create mode 100644 pruebas/mejoras/entradas/m06-m07-cadena-1.txt
+ create mode 100644 pruebas/mejoras/entradas/m06-m07-cadena-2.txt
+ create mode 100644 pruebas/mejoras/entradas/m06-m07-cadena-3.txt
+ create mode 100644 pruebas/mejoras/entradas/m08-flotante-1.txt
+ create mode 100644 pruebas/mejoras/entradas/m08-flotante-2.txt
+ create mode 100644 pruebas/mejoras/entradas/m08-flotante-3.txt
+ create mode 100644 pruebas/mejoras/entradas/m08-flotante-4.txt
+ create mode 100644 pruebas/mejoras/entradas/m08-flotante-5.txt
+ create mode 100644 pruebas/mejoras/entradas/m08-flotante-6.txt
+ create mode 100644 pruebas/mejoras/entradas/m08-flotante-7.txt
+ create mode 100644 pruebas/mejoras/entradas/m08-flotante-8-error.txt
+ create mode 100644 pruebas/mejoras/salidas/_interactivo.txt
+ create mode 100644 pruebas/mejoras/salidas/demo.txt
+ create mode 100644 pruebas/mejoras/salidas/m01-archivo-invalido.txt
+ create mode 100644 pruebas/mejoras/salidas/m02-memoria-1000.txt
+ create mode 100644 pruebas/mejoras/salidas/m03-residuo-1.txt
+ create mode 100644 pruebas/mejoras/salidas/m03-residuo-2.txt
+ create mode 100644 pruebas/mejoras/salidas/m03-residuo-3.txt
+ create mode 100644 pruebas/mejoras/salidas/m03-residuo-4.txt
+ create mode 100644 pruebas/mejoras/salidas/m03-residuo-5-error.txt
+ create mode 100644 pruebas/mejoras/salidas/m04-potencia-1.txt
+ create mode 100644 pruebas/mejoras/salidas/m04-potencia-2.txt
+ create mode 100644 pruebas/mejoras/salidas/m04-potencia-3.txt
+ create mode 100644 pruebas/mejoras/salidas/m04-potencia-4.txt
+ create mode 100644 pruebas/mejoras/salidas/m04-potencia-5.txt
+ create mode 100644 pruebas/mejoras/salidas/m04-potencia-6-error.txt
+ create mode 100644 pruebas/mejoras/salidas/m05-con-newline.txt
+ create mode 100644 pruebas/mejoras/salidas/m05-sin-newline.txt
+ create mode 100644 pruebas/mejoras/salidas/m06-m07-cadena-1.txt
+ create mode 100644 pruebas/mejoras/salidas/m06-m07-cadena-2.txt
+ create mode 100644 pruebas/mejoras/salidas/m06-m07-cadena-3.txt
+ create mode 100644 pruebas/mejoras/salidas/m08-flotante-1.txt
+ create mode 100644 pruebas/mejoras/salidas/m08-flotante-2.txt
+ create mode 100644 pruebas/mejoras/salidas/m08-flotante-3.txt
+ create mode 100644 pruebas/mejoras/salidas/m08-flotante-4.txt
+ create mode 100644 pruebas/mejoras/salidas/m08-flotante-5.txt
+ create mode 100644 pruebas/mejoras/salidas/m08-flotante-6.txt
+ create mode 100644 pruebas/mejoras/salidas/m08-flotante-7.txt
+ create mode 100644 pruebas/mejoras/salidas/m08-flotante-8-error.txt
+ create mode 100644 src/simpletron/simpletron_mejorado.c
+
+$ git checkout main
+Switched to branch 'main'
+
+$ git merge --no-ff mejoras-simpletron
+Merge made by the 'ort' strategy.
+ programa.simp                                     |  47 ++
+ programas/sml/mejoras/demo.simp                   |  47 ++
+ programas/sml/mejoras/m01-archivo-invalido.simp   |  10 +
+ programas/sml/mejoras/m02-memoria-1000.simp       |  12 +
+ programas/sml/mejoras/m03-residuo.simp            |  12 +
+ programas/sml/mejoras/m04-potencia.simp           |  12 +
+ programas/sml/mejoras/m05-nueva-linea.simp        |  13 +
+ programas/sml/mejoras/m05-sin-nueva-linea.simp    |   9 +
+ programas/sml/mejoras/m06-m07-cadenas.simp        |  16 +
+ programas/sml/mejoras/m08-flotantes.simp          |  14 +
+ pruebas/mejoras/CASOS-DE-PRUEBA-MEJORAS.md        | 244 +++++++
+ pruebas/mejoras/entradas/_interactivo.txt         |   5 +
+ pruebas/mejoras/entradas/demo.txt                 |   3 +
+ pruebas/mejoras/entradas/m01-archivo-invalido.txt |   0
+ pruebas/mejoras/entradas/m02-memoria-1000.txt     |   2 +
+ pruebas/mejoras/entradas/m03-residuo-1.txt        |   2 +
+ pruebas/mejoras/entradas/m03-residuo-2.txt        |   2 +
+ pruebas/mejoras/entradas/m03-residuo-3.txt        |   2 +
+ pruebas/mejoras/entradas/m03-residuo-4.txt        |   2 +
+ pruebas/mejoras/entradas/m03-residuo-5-error.txt  |   2 +
+ pruebas/mejoras/entradas/m04-potencia-1.txt       |   2 +
+ pruebas/mejoras/entradas/m04-potencia-2.txt       |   2 +
+ pruebas/mejoras/entradas/m04-potencia-3.txt       |   2 +
+ pruebas/mejoras/entradas/m04-potencia-4.txt       |   2 +
+ pruebas/mejoras/entradas/m04-potencia-5.txt       |   2 +
+ pruebas/mejoras/entradas/m04-potencia-6-error.txt |   2 +
+ pruebas/mejoras/entradas/m05-con-newline.txt      |   1 +
+ pruebas/mejoras/entradas/m05-sin-newline.txt      |   1 +
+ pruebas/mejoras/entradas/m06-m07-cadena-1.txt     |   1 +
+ pruebas/mejoras/entradas/m06-m07-cadena-2.txt     |   1 +
+ pruebas/mejoras/entradas/m06-m07-cadena-3.txt     |   1 +
+ pruebas/mejoras/entradas/m08-flotante-1.txt       |   2 +
+ pruebas/mejoras/entradas/m08-flotante-2.txt       |   2 +
+ pruebas/mejoras/entradas/m08-flotante-3.txt       |   2 +
+ pruebas/mejoras/entradas/m08-flotante-4.txt       |   2 +
+ pruebas/mejoras/entradas/m08-flotante-5.txt       |   2 +
+ pruebas/mejoras/entradas/m08-flotante-6.txt       |   2 +
+ pruebas/mejoras/entradas/m08-flotante-7.txt       |   2 +
+ pruebas/mejoras/entradas/m08-flotante-8-error.txt |   2 +
+ pruebas/mejoras/salidas/_interactivo.txt          | 127 ++++
+ pruebas/mejoras/salidas/demo.txt                  | 123 ++++
+ pruebas/mejoras/salidas/m01-archivo-invalido.txt  | 121 ++++
+ pruebas/mejoras/salidas/m02-memoria-1000.txt      | 123 ++++
+ pruebas/mejoras/salidas/m03-residuo-1.txt         | 123 ++++
+ pruebas/mejoras/salidas/m03-residuo-2.txt         | 123 ++++
+ pruebas/mejoras/salidas/m03-residuo-3.txt         | 123 ++++
+ pruebas/mejoras/salidas/m03-residuo-4.txt         | 123 ++++
+ pruebas/mejoras/salidas/m03-residuo-5-error.txt   | 124 ++++
+ pruebas/mejoras/salidas/m04-potencia-1.txt        | 123 ++++
+ pruebas/mejoras/salidas/m04-potencia-2.txt        | 123 ++++
+ pruebas/mejoras/salidas/m04-potencia-3.txt        | 123 ++++
+ pruebas/mejoras/salidas/m04-potencia-4.txt        | 123 ++++
+ pruebas/mejoras/salidas/m04-potencia-5.txt        | 123 ++++
+ pruebas/mejoras/salidas/m04-potencia-6-error.txt  | 124 ++++
+ pruebas/mejoras/salidas/m05-con-newline.txt       | 124 ++++
+ pruebas/mejoras/salidas/m05-sin-newline.txt       | 122 ++++
+ pruebas/mejoras/salidas/m06-m07-cadena-1.txt      | 126 ++++
+ pruebas/mejoras/salidas/m06-m07-cadena-2.txt      | 126 ++++
+ pruebas/mejoras/salidas/m06-m07-cadena-3.txt      | 126 ++++
+ pruebas/mejoras/salidas/m08-flotante-1.txt        | 123 ++++
+ pruebas/mejoras/salidas/m08-flotante-2.txt        | 123 ++++
+ pruebas/mejoras/salidas/m08-flotante-3.txt        | 123 ++++
+ pruebas/mejoras/salidas/m08-flotante-4.txt        | 123 ++++
+ pruebas/mejoras/salidas/m08-flotante-5.txt        | 123 ++++
+ pruebas/mejoras/salidas/m08-flotante-6.txt        | 123 ++++
+ pruebas/mejoras/salidas/m08-flotante-7.txt        | 123 ++++
+ pruebas/mejoras/salidas/m08-flotante-8-error.txt  | 124 ++++
+ src/simpletron/simpletron_mejorado.c              | 791 ++++++++++++++++++++++
+ 68 files changed, 4738 insertions(+)
+ create mode 100644 programa.simp
+ create mode 100644 programas/sml/mejoras/demo.simp
+ create mode 100644 programas/sml/mejoras/m01-archivo-invalido.simp
+ create mode 100644 programas/sml/mejoras/m02-memoria-1000.simp
+ create mode 100644 programas/sml/mejoras/m03-residuo.simp
+ create mode 100644 programas/sml/mejoras/m04-potencia.simp
+ create mode 100644 programas/sml/mejoras/m05-nueva-linea.simp
+ create mode 100644 programas/sml/mejoras/m05-sin-nueva-linea.simp
+ create mode 100644 programas/sml/mejoras/m06-m07-cadenas.simp
+ create mode 100644 programas/sml/mejoras/m08-flotantes.simp
+ create mode 100644 pruebas/mejoras/CASOS-DE-PRUEBA-MEJORAS.md
+ create mode 100644 pruebas/mejoras/entradas/_interactivo.txt
+ create mode 100644 pruebas/mejoras/entradas/demo.txt
+ create mode 100644 pruebas/mejoras/entradas/m01-archivo-invalido.txt
+ create mode 100644 pruebas/mejoras/entradas/m02-memoria-1000.txt
+ create mode 100644 pruebas/mejoras/entradas/m03-residuo-1.txt
+ create mode 100644 pruebas/mejoras/entradas/m03-residuo-2.txt
+ create mode 100644 pruebas/mejoras/entradas/m03-residuo-3.txt
+ create mode 100644 pruebas/mejoras/entradas/m03-residuo-4.txt
+ create mode 100644 pruebas/mejoras/entradas/m03-residuo-5-error.txt
+ create mode 100644 pruebas/mejoras/entradas/m04-potencia-1.txt
+ create mode 100644 pruebas/mejoras/entradas/m04-potencia-2.txt
+ create mode 100644 pruebas/mejoras/entradas/m04-potencia-3.txt
+ create mode 100644 pruebas/mejoras/entradas/m04-potencia-4.txt
+ create mode 100644 pruebas/mejoras/entradas/m04-potencia-5.txt
+ create mode 100644 pruebas/mejoras/entradas/m04-potencia-6-error.txt
+ create mode 100644 pruebas/mejoras/entradas/m05-con-newline.txt
+ create mode 100644 pruebas/mejoras/entradas/m05-sin-newline.txt
+ create mode 100644 pruebas/mejoras/entradas/m06-m07-cadena-1.txt
+ create mode 100644 pruebas/mejoras/entradas/m06-m07-cadena-2.txt
+ create mode 100644 pruebas/mejoras/entradas/m06-m07-cadena-3.txt
+ create mode 100644 pruebas/mejoras/entradas/m08-flotante-1.txt
+ create mode 100644 pruebas/mejoras/entradas/m08-flotante-2.txt
+ create mode 100644 pruebas/mejoras/entradas/m08-flotante-3.txt
+ create mode 100644 pruebas/mejoras/entradas/m08-flotante-4.txt
+ create mode 100644 pruebas/mejoras/entradas/m08-flotante-5.txt
+ create mode 100644 pruebas/mejoras/entradas/m08-flotante-6.txt
+ create mode 100644 pruebas/mejoras/entradas/m08-flotante-7.txt
+ create mode 100644 pruebas/mejoras/entradas/m08-flotante-8-error.txt
+ create mode 100644 pruebas/mejoras/salidas/_interactivo.txt
+ create mode 100644 pruebas/mejoras/salidas/demo.txt
+ create mode 100644 pruebas/mejoras/salidas/m01-archivo-invalido.txt
+ create mode 100644 pruebas/mejoras/salidas/m02-memoria-1000.txt
+ create mode 100644 pruebas/mejoras/salidas/m03-residuo-1.txt
+ create mode 100644 pruebas/mejoras/salidas/m03-residuo-2.txt
+ create mode 100644 pruebas/mejoras/salidas/m03-residuo-3.txt
+ create mode 100644 pruebas/mejoras/salidas/m03-residuo-4.txt
+ create mode 100644 pruebas/mejoras/salidas/m03-residuo-5-error.txt
+ create mode 100644 pruebas/mejoras/salidas/m04-potencia-1.txt
+ create mode 100644 pruebas/mejoras/salidas/m04-potencia-2.txt
+ create mode 100644 pruebas/mejoras/salidas/m04-potencia-3.txt
+ create mode 100644 pruebas/mejoras/salidas/m04-potencia-4.txt
+ create mode 100644 pruebas/mejoras/salidas/m04-potencia-5.txt
+ create mode 100644 pruebas/mejoras/salidas/m04-potencia-6-error.txt
+ create mode 100644 pruebas/mejoras/salidas/m05-con-newline.txt
+ create mode 100644 pruebas/mejoras/salidas/m05-sin-newline.txt
+ create mode 100644 pruebas/mejoras/salidas/m06-m07-cadena-1.txt
+ create mode 100644 pruebas/mejoras/salidas/m06-m07-cadena-2.txt
+ create mode 100644 pruebas/mejoras/salidas/m06-m07-cadena-3.txt
+ create mode 100644 pruebas/mejoras/salidas/m08-flotante-1.txt
+ create mode 100644 pruebas/mejoras/salidas/m08-flotante-2.txt
+ create mode 100644 pruebas/mejoras/salidas/m08-flotante-3.txt
+ create mode 100644 pruebas/mejoras/salidas/m08-flotante-4.txt
+ create mode 100644 pruebas/mejoras/salidas/m08-flotante-5.txt
+ create mode 100644 pruebas/mejoras/salidas/m08-flotante-6.txt
+ create mode 100644 pruebas/mejoras/salidas/m08-flotante-7.txt
+ create mode 100644 pruebas/mejoras/salidas/m08-flotante-8-error.txt
+ create mode 100644 src/simpletron/simpletron_mejorado.c
+
+$ git checkout -b evaluacion-expresiones
+Switched to a new branch 'evaluacion-expresiones'
+
+$ git add src/expresiones pruebas/expresiones
+
+$ git commit -m "evaluacion de expresiones con pilas"
+[evaluacion-expresiones 0e0077c] evaluacion de expresiones con pilas
+ 17 files changed, 866 insertions(+)
+ create mode 100644 pruebas/expresiones/CASOS-DE-PRUEBA-EXPRESIONES.md
+ create mode 100644 pruebas/expresiones/salidas/e01.txt
+ create mode 100644 pruebas/expresiones/salidas/e02.txt
+ create mode 100644 pruebas/expresiones/salidas/e03.txt
+ create mode 100644 pruebas/expresiones/salidas/e04.txt
+ create mode 100644 pruebas/expresiones/salidas/e05.txt
+ create mode 100644 pruebas/expresiones/salidas/e06.txt
+ create mode 100644 pruebas/expresiones/salidas/e07.txt
+ create mode 100644 pruebas/expresiones/salidas/x01.txt
+ create mode 100644 pruebas/expresiones/salidas/x02.txt
+ create mode 100644 pruebas/expresiones/salidas/x03.txt
+ create mode 100644 pruebas/expresiones/salidas/x04.txt
+ create mode 100644 pruebas/expresiones/salidas/x05.txt
+ create mode 100644 pruebas/expresiones/salidas/x06.txt
+ create mode 100644 pruebas/expresiones/salidas/x07.txt
+ create mode 100644 pruebas/expresiones/salidas/x08.txt
+ create mode 100644 src/expresiones/expresiones.c
+
+$ git checkout main
+Switched to branch 'main'
+
+$ git merge --no-ff evaluacion-expresiones
+Merge made by the 'ort' strategy.
+ pruebas/expresiones/CASOS-DE-PRUEBA-EXPRESIONES.md |  96 ++++
+ pruebas/expresiones/salidas/e01.txt                |  10 +
+ pruebas/expresiones/salidas/e02.txt                |  10 +
+ pruebas/expresiones/salidas/e03.txt                |  22 +
+ pruebas/expresiones/salidas/e04.txt                |  11 +
+ pruebas/expresiones/salidas/e05.txt                |  11 +
+ pruebas/expresiones/salidas/e06.txt                |  11 +
+ pruebas/expresiones/salidas/e07.txt                |  11 +
+ pruebas/expresiones/salidas/x01.txt                |  23 +
+ pruebas/expresiones/salidas/x02.txt                |  23 +
+ pruebas/expresiones/salidas/x03.txt                |  27 ++
+ pruebas/expresiones/salidas/x04.txt                |  23 +
+ pruebas/expresiones/salidas/x05.txt                |  23 +
+ pruebas/expresiones/salidas/x06.txt                |  25 ++
+ pruebas/expresiones/salidas/x07.txt                |  33 ++
+ pruebas/expresiones/salidas/x08.txt                |  21 +
+ src/expresiones/expresiones.c                      | 486 +++++++++++++++++++++
+ 17 files changed, 866 insertions(+)
+ create mode 100644 pruebas/expresiones/CASOS-DE-PRUEBA-EXPRESIONES.md
+ create mode 100644 pruebas/expresiones/salidas/e01.txt
+ create mode 100644 pruebas/expresiones/salidas/e02.txt
+ create mode 100644 pruebas/expresiones/salidas/e03.txt
+ create mode 100644 pruebas/expresiones/salidas/e04.txt
+ create mode 100644 pruebas/expresiones/salidas/e05.txt
+ create mode 100644 pruebas/expresiones/salidas/e06.txt
+ create mode 100644 pruebas/expresiones/salidas/e07.txt
+ create mode 100644 pruebas/expresiones/salidas/x01.txt
+ create mode 100644 pruebas/expresiones/salidas/x02.txt
+ create mode 100644 pruebas/expresiones/salidas/x03.txt
+ create mode 100644 pruebas/expresiones/salidas/x04.txt
+ create mode 100644 pruebas/expresiones/salidas/x05.txt
+ create mode 100644 pruebas/expresiones/salidas/x06.txt
+ create mode 100644 pruebas/expresiones/salidas/x07.txt
+ create mode 100644 pruebas/expresiones/salidas/x08.txt
+ create mode 100644 src/expresiones/expresiones.c
+
+$ git checkout -b compilador-simple
+Switched to a new branch 'compilador-simple'
+
+$ git add src/compilador programas/simple programas/sml/compilados pruebas/compilador
+
+$ git commit -m "compilador de simple a sml"
+[compilador-simple 5cd1193] compilador de simple a sml
+ 29 files changed, 1660 insertions(+)
+ create mode 100644 programas/simple/01-sumatoria.simple
+ create mode 100644 programas/simple/02-mayor-de-dos.simple
+ create mode 100644 programas/simple/03-promedio.simple
+ create mode 100644 programas/simple/04-tabla.simple
+ create mode 100644 programas/simple/05-expresion.simple
+ create mode 100644 programas/simple/06-factorial.simple
+ create mode 100644 programas/simple/e01-mayuscula.simple
+ create mode 100644 programas/simple/e02-linea-inexistente.simple
+ create mode 100644 programas/simple/e03-comando-invalido.simple
+ create mode 100644 programas/sml/compilados/01-sumatoria.sml
+ create mode 100644 programas/sml/compilados/02-mayor-de-dos.sml
+ create mode 100644 programas/sml/compilados/03-promedio.sml
+ create mode 100644 programas/sml/compilados/04-tabla.sml
+ create mode 100644 programas/sml/compilados/05-expresion.sml
+ create mode 100644 programas/sml/compilados/06-factorial.sml
+ create mode 100644 pruebas/compilador/CASOS-DE-PRUEBA-COMPILADOR.md
+ create mode 100644 pruebas/compilador/entradas/01-sumatoria.txt
+ create mode 100644 pruebas/compilador/entradas/02-mayor-de-dos.txt
+ create mode 100644 pruebas/compilador/entradas/03-promedio.txt
+ create mode 100644 pruebas/compilador/entradas/04-tabla.txt
+ create mode 100644 pruebas/compilador/entradas/05-expresion.txt
+ create mode 100644 pruebas/compilador/entradas/06-factorial.txt
+ create mode 100644 pruebas/compilador/salidas/01-sumatoria.txt
+ create mode 100644 pruebas/compilador/salidas/02-mayor-de-dos.txt
+ create mode 100644 pruebas/compilador/salidas/03-promedio.txt
+ create mode 100644 pruebas/compilador/salidas/04-tabla.txt
+ create mode 100644 pruebas/compilador/salidas/05-expresion.txt
+ create mode 100644 pruebas/compilador/salidas/06-factorial.txt
+ create mode 100644 src/compilador/compilador.c
+
+$ git checkout main
+Switched to branch 'main'
+
+$ git merge --no-ff compilador-simple
+Merge made by the 'ort' strategy.
+ programas/simple/01-sumatoria.simple             |  13 +
+ programas/simple/02-mayor-de-dos.simple          |   8 +
+ programas/simple/03-promedio.simple              |   8 +
+ programas/simple/04-tabla.simple                 |   9 +
+ programas/simple/05-expresion.simple             |   6 +
+ programas/simple/06-factorial.simple             |  10 +
+ programas/simple/e01-mayuscula.simple            |   3 +
+ programas/simple/e02-linea-inexistente.simple    |   4 +
+ programas/simple/e03-comando-invalido.simple     |   3 +
+ programas/sml/compilados/01-sumatoria.sml        | 103 ++++
+ programas/sml/compilados/02-mayor-de-dos.sml     | 103 ++++
+ programas/sml/compilados/03-promedio.sml         | 103 ++++
+ programas/sml/compilados/04-tabla.sml            | 103 ++++
+ programas/sml/compilados/05-expresion.sml        | 103 ++++
+ programas/sml/compilados/06-factorial.sml        | 103 ++++
+ pruebas/compilador/CASOS-DE-PRUEBA-COMPILADOR.md | 130 +++++
+ pruebas/compilador/entradas/01-sumatoria.txt     |   1 +
+ pruebas/compilador/entradas/02-mayor-de-dos.txt  |   2 +
+ pruebas/compilador/entradas/03-promedio.txt      |   3 +
+ pruebas/compilador/entradas/04-tabla.txt         |   1 +
+ pruebas/compilador/entradas/05-expresion.txt     |   2 +
+ pruebas/compilador/entradas/06-factorial.txt     |   1 +
+ pruebas/compilador/salidas/01-sumatoria.txt      |  29 +
+ pruebas/compilador/salidas/02-mayor-de-dos.txt   |  29 +
+ pruebas/compilador/salidas/03-promedio.txt       |  29 +
+ pruebas/compilador/salidas/04-tabla.txt          |  38 ++
+ pruebas/compilador/salidas/05-expresion.txt      |  29 +
+ pruebas/compilador/salidas/06-factorial.txt      |  29 +
+ src/compilador/compilador.c                      | 655 +++++++++++++++++++++++
+ 29 files changed, 1660 insertions(+)
+ create mode 100644 programas/simple/01-sumatoria.simple
+ create mode 100644 programas/simple/02-mayor-de-dos.simple
+ create mode 100644 programas/simple/03-promedio.simple
+ create mode 100644 programas/simple/04-tabla.simple
+ create mode 100644 programas/simple/05-expresion.simple
+ create mode 100644 programas/simple/06-factorial.simple
+ create mode 100644 programas/simple/e01-mayuscula.simple
+ create mode 100644 programas/simple/e02-linea-inexistente.simple
+ create mode 100644 programas/simple/e03-comando-invalido.simple
+ create mode 100644 programas/sml/compilados/01-sumatoria.sml
+ create mode 100644 programas/sml/compilados/02-mayor-de-dos.sml
+ create mode 100644 programas/sml/compilados/03-promedio.sml
+ create mode 100644 programas/sml/compilados/04-tabla.sml
+ create mode 100644 programas/sml/compilados/05-expresion.sml
+ create mode 100644 programas/sml/compilados/06-factorial.sml
+ create mode 100644 pruebas/compilador/CASOS-DE-PRUEBA-COMPILADOR.md
+ create mode 100644 pruebas/compilador/entradas/01-sumatoria.txt
+ create mode 100644 pruebas/compilador/entradas/02-mayor-de-dos.txt
+ create mode 100644 pruebas/compilador/entradas/03-promedio.txt
+ create mode 100644 pruebas/compilador/entradas/04-tabla.txt
+ create mode 100644 pruebas/compilador/entradas/05-expresion.txt
+ create mode 100644 pruebas/compilador/entradas/06-factorial.txt
+ create mode 100644 pruebas/compilador/salidas/01-sumatoria.txt
+ create mode 100644 pruebas/compilador/salidas/02-mayor-de-dos.txt
+ create mode 100644 pruebas/compilador/salidas/03-promedio.txt
+ create mode 100644 pruebas/compilador/salidas/04-tabla.txt
+ create mode 100644 pruebas/compilador/salidas/05-expresion.txt
+ create mode 100644 pruebas/compilador/salidas/06-factorial.txt
+ create mode 100644 src/compilador/compilador.c
+
+$ git branch -v
+  compilador-simple      5cd1193 compilador de simple a sml
+  evaluacion-expresiones 0e0077c evaluacion de expresiones con pilas
+* main                   1fd9e47 Merge branch 'compilador-simple'
+  mejoras-simpletron     262e0c1 mejoras al simulador
+
+$ git log --graph --oneline --all
+*   1fd9e47 Merge branch 'compilador-simple'
+|\  
+| * 5cd1193 compilador de simple a sml
+|/  
+*   85b5f2d Merge branch 'evaluacion-expresiones'
+|\  
+| * 0e0077c evaluacion de expresiones con pilas
+|/  
+*   f9e26b1 Merge branch 'mejoras-simpletron'
+|\  
+| * 262e0c1 mejoras al simulador
+|/  
+* 6ecb5f9 programas sml y pruebas del simulador
+* efdf804 simulador simpletron
+
